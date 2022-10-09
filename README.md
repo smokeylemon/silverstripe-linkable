@@ -24,7 +24,7 @@ This module contains a couple of handy FormFields / DataObjects for managing ext
 ## Installation with [Composer](https://getcomposer.org/)
 
 ```
-composer require "sheadawson/silverstripe-linkable"
+composer require "dynamic/silverstripe-linkable"
 ```
 
 ## Link / LinkField
@@ -151,7 +151,7 @@ Sheadawson\Linkable\Models\Link:
     - CustomLink
 ```
 
-Please see the [wiki](https://github.com/sheadawson/silverstripe-linkable/wiki) for more customisation examples.
+Please see the [wiki](https://github.com/dynamic/silverstripe-linkable/wiki) for more customisation examples.
 
 ## EmbeddedObject/Field
 

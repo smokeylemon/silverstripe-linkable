@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sheadawson/silverstripe-linkable.git"
+    "url": "git@github.com:dynamic/silverstripe-linkable.git"
   },
   "keywords": [
     "silverstripe",
@@ -29,9 +29,9 @@
   "author": "Uncle Cheese",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/sheadawson/silverstripe-linkable/issues"
+    "url": "https://github.com/dynamic/silverstripe-linkable/issues"
   },
-  "homepage": "https://github.com/sheadawson/silverstripe-linkable/",
+  "homepage": "https://github.com/dynamic/silverstripe-linkable/",
   "dependencies": {
     "apollo-client": "^0.5.5",
     "babel-polyfill": "^6.26.0",
