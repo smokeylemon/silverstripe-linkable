@@ -76,8 +76,7 @@ class EmbeddedObject extends DataObject
     {
         if ($url) {
             // array('image' => array('minImageWidth' => $this->Width, 'minImageHeight' => $this->Height)));
-            $embed = new Embed();
-            $info = $embed->get($url);
+            $info = Embed::create($url);
             $this->setFromEmbed($info);
         }
     }
@@ -89,13 +88,12 @@ class EmbeddedObject extends DataObject
     {
         $this->Title = $info->title;
         $this->SourceURL = (string) $info->url;
-        $this->Width = $info->code->width;
-        $this->Height = $info->code->height;
+        $this->Width = $info->width;
+        $this->Height = $info->height;
         $this->ThumbURL = (string) $info->image;
         $this->Description = $info->description ? $info->description : $info->title;
         $this->Type = 'video';
-
-        $this->EmbedHTML = $info->code->html;
+        $this->EmbedHTML = $info->code;
     }
 
     /**

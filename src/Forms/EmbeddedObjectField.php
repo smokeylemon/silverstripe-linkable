@@ -198,8 +198,7 @@ class EmbeddedObjectField extends FormField
 
         $url = $request->postVar('URL');
         if (strlen($url)) {
-            $embed = new Embed();
-            $info = $embed->get($url);
+            $info = Embed::create($url);
 
             if ($info) {
                 $object = EmbeddedObject::create();
